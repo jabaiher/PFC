@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 57037750bf2bea04f809e5eb6b63ab56
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - back: {fileID: 2800000, guid: 5c53736851da72e48b503583e57accc8, type: 3}
+  - backSelected: {fileID: 2800000, guid: 3e0d4a31f80f4334282f46d6cd7644a3, type: 3}
+  - rechargue: {fileID: 2800000, guid: 0de9e473c9f27fb4385df302b526420e, type: 3}
+  - rechargueSelected: {fileID: 2800000, guid: b2a5c009bcbc6f64faac5023771a5680, type: 3}
+  - shiny: {fileID: 2800000, guid: f3baf6a1ca7044e41a41c4ca6c9f125b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

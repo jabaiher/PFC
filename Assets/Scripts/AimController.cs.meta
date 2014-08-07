@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 0f14f8f2cec2db94298282b7b0a500ef
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - character: {instanceID: 0}
+  - powerArrow: {fileID: 2800000, guid: ae52e36eb618d354e953f7c601628ff3, type: 3}
+  - backgroundArrow: {fileID: 2800000, guid: 4b7b4eab89b03c547be67f34794cbeb4, type: 3}
+  - prueba: {fileID: 2800000, guid: 8c1b2b602dfd0fc4abf70ce99b187644, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

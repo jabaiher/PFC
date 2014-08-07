@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 857ab0f0ee0345342b564e53529daad6
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - imageButton: {fileID: 2800000, guid: d62364890c435504c84058e61f9ebe34, type: 3}
+  - imageRechargeButton: {fileID: 2800000, guid: e524351581e299c4ea8772b0e59aa780,
+      type: 3}
+  - aim: {instanceID: 0}
+  - projectilePrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
