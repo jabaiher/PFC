@@ -24,8 +24,10 @@ ModelImporter:
     3300000: //RootNode
     3300002: mesh
     4300000: mesh
-    7400000: Take 001
+    7400000: chargue
+    7400002: unchargue
     9500000: //RootNode
+    11100000: //RootNode
     13700000: mesh
   materials:
     importMaterials: 1
@@ -42,7 +44,91 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: chargue
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mesh
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bowstring
+        weight: 1
+      - path: Root/LowerLimb1
+        weight: 1
+      - path: Root/LowerLimb1/LowerLimb2
+        weight: 1
+      - path: Root/UpperLimb1
+        weight: 1
+      - path: Root/UpperLimb1/UpperLimb2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: unchargue
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mesh
+        weight: 1
+      - path: Root
+        weight: 1
+      - path: Root/Bowstring
+        weight: 1
+      - path: Root/LowerLimb1
+        weight: 1
+      - path: Root/LowerLimb1/LowerLimb2
+        weight: 1
+      - path: Root/UpperLimb1
+        weight: 1
+      - path: Root/UpperLimb1/UpperLimb2
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -78,6 +164,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: Root
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 1
   userData: 

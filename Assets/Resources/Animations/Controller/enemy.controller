@@ -26,12 +26,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
-  - m_Name: speed
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
   - m_Name: run
     m_Type: 4
     m_DefaultFloat: 0
@@ -79,17 +73,61 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 0}
   m_DstState: {fileID: 110227388}
-  m_TransitionDuration: .100000001
+  m_TransitionDuration: .014836926
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: hit
     m_EventTreshold: 0
     m_ExitTime: .899999976
-  - m_ConditionMode: 3
-    m_ConditionEvent: live
-    m_EventTreshold: .100000001
-    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 1
+--- !u!1101 &110106148
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110227388}
+  m_DstState: {fileID: 110222938}
+  m_TransitionDuration: .119719118
+  m_TransitionOffset: .0131176189
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .91314286
+  - m_ConditionMode: 1
+    m_ConditionEvent: active
+    m_EventTreshold: 0
+    m_ExitTime: .758064508
+  - m_ConditionMode: 2
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: .758064508
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+  m_CanTransitionToSelf: 0
+--- !u!1101 &110117210
+Transition:
+  serializedVersion: 2
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110230957}
+  m_DstState: {fileID: 110200000}
+  m_TransitionDuration: .202702746
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 2
+    m_ConditionEvent: active
+    m_EventTreshold: 0
+    m_ExitTime: .797297239
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -103,11 +141,19 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110227388}
   m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .241935492
-  m_TransitionOffset: 0
+  m_TransitionDuration: 0
+  m_TransitionOffset: .0525019206
   m_Conditions:
   - m_ConditionMode: 5
     m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: 1.01379967
+  - m_ConditionMode: 2
+    m_ConditionEvent: dead
+    m_EventTreshold: 0
+    m_ExitTime: .758064508
+  - m_ConditionMode: 1
+    m_ConditionEvent: active
     m_EventTreshold: 0
     m_ExitTime: .758064508
   m_Atomic: 1
@@ -123,10 +169,10 @@ Transition:
   m_Name: 
   m_SrcState: {fileID: 110227388}
   m_DstState: {fileID: 110266685}
-  m_TransitionDuration: .100000001
-  m_TransitionOffset: 0
+  m_TransitionDuration: .239746228
+  m_TransitionOffset: .0710184872
   m_Conditions:
-  - m_ConditionMode: 4
+  - m_ConditionMode: 1
     m_ConditionEvent: dead
     m_EventTreshold: .100000001
     m_ExitTime: .899999976
@@ -191,7 +237,7 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: active
+    m_ConditionEvent: run
     m_EventTreshold: 0
     m_ExitTime: .899999976
   m_Atomic: 1
@@ -209,7 +255,7 @@ State:
   m_Motions:
   - {fileID: 7400004, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -84, y: 48, z: 0}
+  m_Position: {x: -168, y: 0, z: 0}
   m_IKOnFeet: 1
   m_Mirror: 0
   m_Tag: 
@@ -224,7 +270,7 @@ State:
   m_Motions:
   - {fileID: 7400006, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -84, y: 144, z: 0}
+  m_Position: {x: -48, y: 120, z: 0}
   m_IKOnFeet: 1
   m_Mirror: 0
   m_Tag: 
@@ -254,7 +300,7 @@ State:
   m_Motions:
   - {fileID: 7400008, guid: e58e375f5ed38074480b5df1226c7bc3, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -84, y: 252, z: 0}
+  m_Position: {x: -168, y: 240, z: 0}
   m_IKOnFeet: 1
   m_Mirror: 0
   m_Tag: 
@@ -307,11 +353,13 @@ StateMachine:
       first: {fileID: 110230957}
       second:
       - {fileID: 110179209}
+      - {fileID: 110117210}
     data:
       first: {fileID: 110227388}
       second:
       - {fileID: 110146081}
       - {fileID: 110132503}
+      - {fileID: 110106148}
     data:
       first: {fileID: 110266685}
       second: []
